@@ -1,0 +1,272 @@
+:root {
+    --letter-spacing: 0.07ch;
+    --body-height: calc(100vh - 5rem )
+}
+
+* {
+    box-sizing: border-box; /* Width and height properties (and min/max properties) includes content, padding and border */
+    
+ }
+ 
+ body{
+    background: rgb(28, 28, 28); /* Set background color to a lightish black/grey */
+    margin: 0; /* Remove padding & margins from body */
+    padding: 0;
+    height: calc(100vh - 5rem )
+}
+
+.header {
+    display: flex; /* Align everything in the center vertically & put content on the left */
+    align-items: center;
+    justify-content: left;
+    border-bottom: 1px solid rgb(54, 54, 54); /* Border bottom to make it look more like DuckDuckGo */
+    background: rgb(22, 22, 22); /* Darker background for the top search portion */
+    height: 5rem; /* Set the height */
+    position: sticky;
+    top: 0;
+
+}
+
+.header .duck-logo {
+    height: 50px; /* Change logo size */
+    margin-right: 3rem; /* Add margins on right & left */
+    margin-left: 6rem;
+}
+
+.header .search-icon{
+    padding: 0.4em 0.4em; /* Add padding to the search icon  */
+    border-top-right-radius: 10px; /* Add border-radius to top right & bottom right for better look  */
+    border-bottom-right-radius: 10px;
+    height: 44.5px; /* Set size of search icon */
+    width: 3rem; /* Set the width so it isn't too narrow */ 
+    color: rgb(107, 107, 107); /* Make search icon grey color */
+    background: #333333; 
+    border: none;
+    cursor: pointer;
+}
+
+.header .search-icon:hover, /* Changing background color of search icon on hover */
+.header .search-icon:focus {
+    background: #3969EF;
+    color: white;
+    outline: none;
+}
+
+.header #search-text {
+    width: 40rem;
+    text-indent: 1ch;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: none;
+    outline: none;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 50%);
+    background-color: #333333;
+    height: 44.5px;
+    color: #eeeeee;
+    font-size: 16px;
+    text-align: start !important;
+}
+
+
+
+.header #delete {
+    padding: 0.1em 0.3em;
+    color: grey;
+    font-size: 33.3px;
+    cursor: default;
+    user-select: none;
+    background: #333333;
+    cursor: pointer;
+    height: 44.5px;
+
+}
+
+.header #delete:hover {
+    color: rgb(192, 192, 192);
+}
+
+.side-bar {
+    position: absolute;
+    right: 30%;
+    margin-top: 10rem;
+    margin-left: 10rem;
+    width: 20rem;
+    padding-left: 5%;
+    display: block;
+}
+
+.card {
+    font-family: sans-serif;
+    color: #eeeeee;
+    background: #282828;
+    width: 32rem;
+    height: 20rem;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 50%);
+    border: 1px solid #282828;
+    border-radius: 10px;
+    line-height: 23px;
+    padding: 20px 22px;
+    margin: -20px -22px 20px;
+    position: relative;
+    overflow: hidden !important;
+}
+
+.card .top-half {
+    border-bottom: 1px solid rgba(150,150,150,0.3);
+}
+
+.card .expand-card {
+    width: 100%;
+    height: 2rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: absolute;
+bottom: 0;
+left: 0;
+margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    font-size: 20px;
+    background: rgb(51, 51, 51);
+    cursor:pointer;
+
+}
+
+.card .expand-card:hover {
+    background-color: #444444
+}
+.searches {
+background: none;
+border: none;
+box-shadow: none;
+letter-spacing: -0.2px;
+font-size: 20px;
+display: flex;
+flex-direction: column;
+gap: 0.8rem;
+
+}
+
+.searches a::before {
+font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f002";
+  margin-right: 0.5rem;
+}
+
+.searches a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #eeeeee;
+    background-color: rgb(40, 40, 40);
+    border-radius: 10px;
+    padding: 0.6em 1em;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+
+.card a:hover {
+    text-decoration: underline;
+    background-color: #444444
+}
+
+
+#feedback {
+    position: fixed;
+    bottom: 5px;
+    right: 0;
+    border-radius: 6px;
+    color: #9e9e9e;
+    padding: 0.4em 0.7em;
+    background-color: #282828;
+    font-size: 14px;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+
+#feedback:hover {
+    
+    color: white;
+}
+
+.website-container a {
+    text-decoration: none;
+}
+
+.website-container a::visited {
+    color: grey;
+}
+
+.website-container a{
+    color: white;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+
+.search-results {
+    position: absolute;
+    left: 10%;
+    margin-top: 2rem;
+    width: 40rem;
+    padding-right: -10%;
+    padding-left: -10%;
+}
+
+.website-container h2 {
+    position: relative;
+    text-indent: 0.3ch;
+    margin-top: 1.7rem !important;
+    margin-bottom: -0.6rem;
+}
+
+.website-container h2:hover {
+    text-decoration: underline;
+}
+
+.website-container img {
+    positioN: absolute;
+    top: 0.5rem;
+}
+
+.website-container small {
+    font-size: 14px;
+    letter-spacing: var(--letter-spacing);
+    top: 0.5rem;
+    left: 1.3rem;
+    position: absolute
+}
+
+
+.website-container p {
+    color: #d1d1d1;
+    font-family: sans-serif;
+    letter-spacing: var(--letter-spacing)
+}
+
+.website-link-container {
+    display: grid;
+    grid-template-columns: repeat(2, 14rem);
+    text-indent: 3ch;
+    gap: 2rem;
+}
+
+.website-link-container a {
+    color: #eeeeee;
+    text-decoration: none;
+    font-family:sans-serif;
+    font-weight: 100;
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+
+
+}
+
+.website-link-container a:hover {
+    text-decoration: underline;
+}
+
