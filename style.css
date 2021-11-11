@@ -23,6 +23,7 @@
     background: rgb(22, 22, 22); /* Darker background for the top search portion */
     height: 5rem; /* Set the height */
     position: sticky;
+    z-index: 1;
     top: 0;
 
 }
