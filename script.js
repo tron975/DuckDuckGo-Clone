@@ -3,7 +3,6 @@ const searchText = document.getElementById('search-text')
 searchText.addEventListener("keyup", function(event) {
     // Number 13 is the "Enter" key on the keyboard
     if (event.keyCode === 13) {
-      // Cancel the default action, if needed
       // Trigger the button element with a click
       document.querySelector(".search-icon").click();
     }
