@@ -13,7 +13,8 @@
     background: rgb(28, 28, 28); /* Set background color to a lightish black/grey */
     margin: 0; /* Remove padding & margins from body */
     padding: 0;
-    height: calc(100vh - 5rem )
+    height: calc(100vh - 5rem );
+width: 100%;
 }
 
 .header {
