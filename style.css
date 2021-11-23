@@ -1,6 +1,7 @@
 :root {
     --letter-spacing: 0.07ch;
     --body-height: calc(100vh - 5rem )
+    --card-width: 32rem;
 }
 
 * {
@@ -212,8 +213,7 @@ font-family: "Font Awesome 5 Free";
     left: 10%;
     margin-top: 2rem;
     width: 40rem;
-    padding-right: -10%;
-    padding-left: -10%;
+    margin-right: calc(100% - var(--card-width);
 }
 
 .website-container h2 {
