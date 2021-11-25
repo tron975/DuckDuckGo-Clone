@@ -1,6 +1,6 @@
 :root {
     --letter-spacing: 0.07ch;
-    --body-height: calc(100vh - 5rem )
+    --body-height: calc(100vh - 5rem );
     --card-width: 32rem;
 }
 
